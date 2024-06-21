@@ -1,6 +1,6 @@
 import { generalKnowledge } from './generalKnowledge'
-import { eletrica } from './javascript'
-import { refrigeracao } from './python'
+import { eletrica } from './eletrica'
+import { refrigeracao } from './refrigeracao'
 import { react } from './react'
 
 // Question Types
