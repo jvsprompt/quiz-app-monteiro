@@ -1,1 +1,0 @@
-Start-Process code . -WindowStyle Hidden

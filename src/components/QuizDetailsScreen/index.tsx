@@ -67,7 +67,7 @@ const QuizDetailsScreen = () => {
         <LogoContainer>
           <AppLogo />
         </LogoContainer>
-        <AppTitle>Teste de {quizTitle} Básica</AppTitle>
+        <AppTitle>Prova de {quizTitle} Básica</AppTitle>
         <DetailTextContainer>
           <DetailText>
             Nome do Candidato:{' '}
@@ -89,7 +89,7 @@ const QuizDetailsScreen = () => {
             <br />
             No final da prova clique em{' '}
             <HighlightedText>Mostrar Resultado</HighlightedText> para verificar se passou
-            no teste.
+            na prova.
           </DetailText>
         </DetailTextContainer>
         <Button

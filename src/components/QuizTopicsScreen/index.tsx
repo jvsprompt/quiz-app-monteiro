@@ -161,7 +161,7 @@ const QuizTopicsScreen: React.FC = () => {
           <AppLogo />
         </LogoContainer>
         <Heading>
-          Bem-Vindo ao teste de <HighlightedText>{quizTitle} Básica</HighlightedText>. 
+          Bem-Vindo à Prova de <HighlightedText>{quizTitle} Básica</HighlightedText>. 
         </Heading>
         <DetailText>Nome Completo do Candidato:</DetailText>
         <input

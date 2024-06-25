@@ -13,6 +13,7 @@ type CorrectAnswers = string[]
 
 export type Question = {
   question: string
+  questionb: string
   choices: Choice[]
   type: 'MCQs' | 'MAQs' | 'boolean'
   correctAnswers: CorrectAnswers

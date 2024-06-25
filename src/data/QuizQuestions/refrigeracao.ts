@@ -16,6 +16,7 @@ export const refrigeracao: Topic = {
     {
       // 1°
       question: 'Quais os componentes principais do ciclo de refrigeração?',
+      questionb: '',
       choices: [
         'Compressor, Ventilador, Capacitor e Evaporador.',
         'Compressor, Evaporador e Condensador.',
@@ -30,6 +31,7 @@ export const refrigeracao: Topic = {
     {
       // 2°
       question: 'Qual a função do condensador ?',
+      questionb: '',
       choices: [
         'Comprimir o fluido refrigerante.',
         'Evaporar o fluido refrigerante.',
@@ -44,6 +46,7 @@ export const refrigeracao: Topic = {
     {
       // 3°
       question: 'Qual a função do dispositivo de expansão?',
+      questionb: '',
       choices: [
         'Promove queda de pressão e temperatura do gás.',
         'Condensa o fluido refrigerante.',
@@ -58,6 +61,7 @@ export const refrigeracao: Topic = {
     {
       // 4°
       question: 'Qual a função do pressostato?',
+      questionb: '',
       choices: [
         'Proteger o sistema de refrigeração.',
         'Indicar a temperatura ambiente.',
@@ -72,6 +76,7 @@ export const refrigeracao: Topic = {
     {
       // 5°
       question: 'Quais as causas para um compressor funcionando queimar?',
+      questionb: '',
       choices: [
         'Compressor desligado, capacitor queimado e ventilador funcionando.',
         'Pressostato desarmado, evaporador congelado, falta de agua e ventilador com defeito.',
@@ -86,6 +91,7 @@ export const refrigeracao: Topic = {
     {
       // 6°
       question: 'Quais verificações são corretas em um split de 9.000BTUS?',
+      questionb: '',
       choices: [
         'Pressão, Tensão, Correia, Amperagem e Temperatura.',
         'Temperatura, Tensão, Pressão e Amperagem.',
@@ -100,6 +106,7 @@ export const refrigeracao: Topic = {
     {
       // 7°
       question: 'Procedimentos corretos em preventiva de quadro elétrico?',
+      questionb: '',
       choices: [
         'Reaperto de parafusos, rnedicão de pressão, Limpeza e medição de tensão.',
         'Limpeza, medição de amperagem, lavar e reaperto de parafusos.',
@@ -113,7 +120,8 @@ export const refrigeracao: Topic = {
     },
     {
       // 8°
-      question: 'Qual é a sequência de  procedimentos corretos para realizar a troca de um compressor queimado?',
+      question: 'Qual é a sequência de procedimentos correta para realizar a troca de um compressor queimado?',
+      questionb: '',
       choices: [
         'Vácuo, Limpeza do sistema, pressurização e funcionamento do compressor.',
         'Funcionamento do compressor, Limpeza do compressor e vácuo.',
@@ -129,6 +137,7 @@ export const refrigeracao: Topic = {
       // 9°
       question:
         'Quais os motivos para um sistema de refrigeração desarmar por alta pressão ?',
+      questionb: '',
       choices: [
         'Falta de gás, Falta de agua, compressor com defeito e ventilador parado.',
         'Excesso de gás, correia do evaporador partida, falta de gás e gelo no compressor.',
@@ -145,6 +154,7 @@ export const refrigeracao: Topic = {
     {
       // 10
       question: 'Selecione a opção que corresponda a coluna A:',
+      questionb: '',
       code: `COLUNA A                                       COLUNA B\n 
 (1) Passagem do vapor para liquido            ( ) Linha de sucção\n                                                             
 (2) interliga evaporador e compressor         ( ) Linha de liquido\n

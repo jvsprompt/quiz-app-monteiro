@@ -90,7 +90,7 @@ const QuestionScreen: FC = () => {
 
   const currentQuestion = questions[activeQuestion]
 
-  const { question, type, choices, code, image, correctAnswers } = currentQuestion
+  const { question, questionb, type, choices, code, image, correctAnswers } = currentQuestion
    
 
   const obtainedScore = result
@@ -228,6 +228,7 @@ const QuestionScreen: FC = () => {
           question={question}
           code={code}
           image={image}
+          questionb={questionb}
           choices={choices}
           type={type}
           handleAnswerSelection={handleAnswerSelection}

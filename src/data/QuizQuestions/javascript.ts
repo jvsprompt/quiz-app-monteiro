@@ -13,8 +13,8 @@ import questionXV from '../../assets/images/eletrica/15.png'
 import questionXVII from '../../assets/images/eletrica/17.png'
 
 
-export const eletrica: Topic = {
-  topic: 'Eletrica',
+export const javascript: Topic = {
+  topic: 'Javascript',
   level: 'Intermediate',
   totalQuestions: 17,
   totalScore: 17,
@@ -23,6 +23,7 @@ export const eletrica: Topic = {
     {
       // 1°
       question: 'Em uma instalação elétrica, quando ocorre o rompimento do condutor neutro alimentador, haverá:',
+      questionb: '',
       choices: [
         'sub-tensão nos circuitos bifásicos.',
         'sobre-tensão nos circuitos bifásicos.',
@@ -36,6 +37,7 @@ export const eletrica: Topic = {
     {
       // 2°
       question: 'A NR-10 recomenda aos eletricistas, como medida de segurança no trabalho, a utilização do aterramento temporário, ou seja:',
+      questionb: '',
       choices: [
         'controlado por relé de tempo.',
         'controlado pela temperatura.',
@@ -49,6 +51,7 @@ export const eletrica: Topic = {
     {
       // 3°
       question: 'O interruptor adequado para comandar, de um único ponto, uma lâmpada 220 V (fase- fase) é o interruptor:',
+      questionb: '',
       choices: [
         'paralelo simples.',
         'paralelo bipolar.',
@@ -62,6 +65,7 @@ export const eletrica: Topic = {
     {
       // 4°
       question: 'As grandezas elétricas: tensão, corrente e potência, pela ordem, têm como unidade:',
+      questionb: '',
       choices: [
         'volt, watt e ampère.',
         'volt, ampère e watt.',
@@ -75,6 +79,7 @@ export const eletrica: Topic = {
     {
       // 5°
       question: 'Ao ligar uma lâmpada, um eletricista percebe que o seu brilho fica muito intenso, e em seguida o filamento se rompe. A causa foi:',
+      questionb: '',
       choices: [
         'a tensão do circuito era superior à tensão da lâmpada.',
         'a potência da lâmpada era baixa para a tensão do circuito.',
@@ -87,7 +92,10 @@ export const eletrica: Topic = {
     },
     {
       // 6°
-      question: 'Em um circuito onde estava previsto o uso de condutores de 2,5 mm2 foi utilizado condutor de 6 mm2. A consequência será:',
+      question: `
+      Em um circuito onde estava previsto o uso de condutores de 2,5 mm2 foi utilizado condutor de 6 mm2.
+      A consequência será:`,
+      questionb: '',
       choices: [
         'maior consumo de energia.',
         'maior queda de tensão.',
@@ -101,6 +109,7 @@ export const eletrica: Topic = {
     {
       // 7°
       question: 'O diagrama elétrico usado para execução de instalações elétricas, que tem o objetivo de mostrar o percurso dos condutores elétricos, é o diagrama:',
+      questionb: '',
       choices: [
         'funcional.',
         'unifilar.',
@@ -114,6 +123,7 @@ export const eletrica: Topic = {
     {
       // 8°
       question: 'Duas lâmpadas, uma de 60 W e outra de 100 W são ligadas em paralelo em uma rede elétrica de 127 V. Os valores de tensão elétrica nas lâmpadas serão na sequência:',
+      questionb: '',
       choices: [
         '55 V e 55 V.',
         '60 V e 127 V.',
@@ -127,6 +137,7 @@ export const eletrica: Topic = {
     {
       // 9°
       question: 'Os dispositivos elétricos mostrados nas figuras, na sequência apresentada, são:',
+      questionb: '',
       image: questionIX,
       choices: [
         'contator, relé sobrecarga e fusível.',
@@ -142,6 +153,7 @@ export const eletrica: Topic = {
       // 10°
       question:
         'As grandezas elétricas da chave seletora de um multímetro, mostradas nas sequências das figuras, são:',
+        questionb: '',
         image: questionX,
         choices: [
         'tensão alternada, resistência e corrente alternada.',
@@ -160,7 +172,8 @@ export const eletrica: Topic = {
       question: `
       No esquema de ligação abaixo identifique a ligação de um (01) circuito paralelo que utiliza 2 interruptores e uma LÂMPADA. 
       Assinale a alternativa Verdadeira:`,
-        image: questionXI,
+      questionb: '',  
+      image: questionXI,
         choices: [
           'Esquema 01.',
           'Esquema 02.',
@@ -177,6 +190,7 @@ export const eletrica: Topic = {
       // 12°
       question:
         'A figura abaixo representa o esquema elétrico de qual ligação para partida de um motor?',
+        questionb: '',
         image: questionXII,
         choices: [
           'Partida com rampa de suavização.',
@@ -194,6 +208,7 @@ export const eletrica: Topic = {
       // 13°
       question:
         'Na partida de motores elétricos, a corrente pode atingir valores elevados, o que pode causar queda de tensão na rede. Esse efeito não é desejado, portanto, uma das técnicas para reduzir a corrente de partida de motores é a utilização de:',
+        questionb: '',
         choices: [
           'Transformador defasador.',
           'Banco de capacitores.',
@@ -209,7 +224,8 @@ export const eletrica: Topic = {
     {
       // 14°
       question:
-        'No esquema de comando seguinte, o relé térmico de terminais 95 e 96 desliga o motor por meio da dilatação de suas lâminas bimetálicas, em situações como sobrecorrente gerada por travamento do rotor.',
+        'No esquema de comando seguinte, o relé térmico de terminais 95 e 96 desligam o motor por meio da dilatação de suas lâminas bimetálicas, em situações como sobrecorrente gerada por travamento do rotor. A afirmação condiz com a imagem abaixo?',
+        questionb: '',
         image: questionXIV,
         choices: [
           'Errado.',
@@ -222,7 +238,8 @@ export const eletrica: Topic = {
     {
       // 15°
       question:
-        'O diagrama representado é configurado para acionamento e proteção de um motor trifásico.',
+        'O diagrama representado é configurado para acionamento e proteção de um motor trifásico. Marque a alternativa correta:',
+        questionb: '',
         image: questionXV,
         choices: [
           'o acionamento é uma chave estrela/triângulo e os contatores K1, K2 e K3 permanecem fechados após a partida.',
@@ -240,6 +257,7 @@ export const eletrica: Topic = {
       // 16°
       question:
         'A utilização de soft starters gera a redução da corrente de partida com mínimo prejuízo no torque.',
+        questionb: '',
         choices: [
           'Errado.',
           'Certo.',
@@ -252,6 +270,7 @@ export const eletrica: Topic = {
       // 17°
       question:
         'Na figura a seguir, o motor está ligado em delta no esquema I, e em estrela no esquema II.',
+        questionb: '',
         image: questionXVII,
         choices: [
           'Errado.',

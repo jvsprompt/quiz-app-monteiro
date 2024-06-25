@@ -4,165 +4,280 @@
 // 3. MAQs | Multiple Answers | multiple
 
 import { Topic } from '.'
-import CodeSnippet1 from '../../assets/images/code-snippet-1.png'
+import questionIX from '../../assets/images/eletrica/9.png'
+import questionX from '../../assets/images/eletrica/10.png'
+import questionXI from '../../assets/images/eletrica/11.png'
+import questionXII from '../../assets/images/eletrica/12.png'
+import questionXIV from '../../assets/images/eletrica/14.png'
+import questionXV from '../../assets/images/eletrica/15.png'
+import questionXVII from '../../assets/images/eletrica/17.png'
 
-export const refrigeracao: Topic = {
-  topic: 'Refrigeracao',
+
+export const python: Topic = {
+  topic: 'Python',
   level: 'Intermediate',
-  totalQuestions: 10,
-  totalScore: 10,
-  totalTime: 1200,
+  totalQuestions: 17,
+  totalScore: 17,
+  totalTime: 1800,
   questions: [
     {
       // 1°
-      question: 'Quais os componentes principais do ciclo de refrigeração?',
+      question: 'Em uma instalação elétrica, quando ocorre o rompimento do condutor neutro alimentador, haverá:',
+      questionb: '',
       choices: [
-        'Compressor, Ventilador, Capacitor e Evaporador.',
-        'Compressor, Evaporador e Condensador.',
-        'Evaporador, Dispositivo de expansão, Compressor e Condensador.',
-        'Evaporador, Ventilador, Condensador e Compressor.',
-        'Compressor, Filtro, Condensador e Evaporador.',
+        'sub-tensão nos circuitos bifásicos.',
+        'sobre-tensão nos circuitos bifásicos.',
+        'possibilidade de queima de equipamentos elétricos dos circuitos monofásicos.',
+        'funcionamento normal dos circuitos monofásicos, pois as fases estão ativas.',        
       ],
       type: 'MCQs',
-      correctAnswers: ['Evaporador, Dispositivo de expansão, Compressor e Condensador.'],
+      correctAnswers: ['possibilidade de queima de equipamentos elétricos dos circuitos monofásicos.'],
       score: 1,
     },
     {
       // 2°
-      question: 'Qual a função do condensador ?',
+      question: 'A NR-10 recomenda aos eletricistas, como medida de segurança no trabalho, a utilização do aterramento temporário, ou seja:',
+      questionb: '',
       choices: [
-        'Comprimir o fluido refrigerante.',
-        'Evaporar o fluido refrigerante.',
-        'Passagem de vapor para Liquido.',
-        'Reter 0 (Zero) gás.',
-        'Passagem de Liquido para solido.',
+        'controlado por relé de tempo.',
+        'controlado pela temperatura.',
+        'utilizado só quando precisar alimentar a carga.',
+        'utilizado no momento da manutenção.',
       ],
       type: 'MCQs',
-      correctAnswers: ['Passagem de vapor para Liquido.'],
+      correctAnswers: ['utilizado no momento da manutenção.'],
       score: 1,
     },
     {
       // 3°
-      question: 'Qual a função do dispositivo de expansão?',
+      question: 'O interruptor adequado para comandar, de um único ponto, uma lâmpada 220 V (fase- fase) é o interruptor:',
+      questionb: '',
       choices: [
-        'Promove queda de pressão e temperatura do gás.',
-        'Condensa o fluido refrigerante.',
-        'Congela o compressor.',
-        'Aquece o compressor.',
-        'Desliga o ventilador do evaporador.',
+        'paralelo simples.',
+        'paralelo bipolar.',
+        'intermediário.',
+        'bipolar.',
       ],
       type: 'MCQs',
-      correctAnswers: ['Promove queda de pressão e temperatura do gás.'],
+      correctAnswers: ['bipolar.'],
       score: 1,
     },
     {
       // 4°
-      question: 'Qual a função do pressostato?',
+      question: 'As grandezas elétricas: tensão, corrente e potência, pela ordem, têm como unidade:',
+      questionb: '',
       choices: [
-        'Proteger o sistema de refrigeração.',
-        'Indicar a temperatura ambiente.',
-        'Indicar a pressão do compressor.',
-        'Recolher o gás para o condensador.',
-        'Liberar o gas para o compressor funcionar.',
+        'volt, watt e ampère.',
+        'volt, ampère e watt.',
+        'watt, volt e ampère.',
+        'ampère, volt e watt.',     
       ],
       type: 'MCQs',
-      correctAnswers: ['Proteger o sistema de refrigeração.'],
+      correctAnswers: ['volt, ampère e watt.'],
       score: 1,
     },
     {
       // 5°
-      question: 'Quais as causas para um compressor funcionando queimar?',
+      question: 'Ao ligar uma lâmpada, um eletricista percebe que o seu brilho fica muito intenso, e em seguida o filamento se rompe. A causa foi:',
+      questionb: '',
       choices: [
-        'Compressor desligado, capacitor queimado e ventilador funcionando.',
-        'Pressostato desarmado, evaporador congelado, falta de agua e ventilador com defeito.',
-        'Falta de agua, disjuntor desarmado, capacitor queimado e pressostato com defeito.',
-        'Superaquecimento baixo, falta de gás, cabos frouxos e compressor desligado.',
-        'Superaquecimento alto, cabos frouxos, falta de gás e tensão.',
+        'a tensão do circuito era superior à tensão da lâmpada.',
+        'a potência da lâmpada era baixa para a tensão do circuito.',
+        'a potência da lâmpada era alta para a tensão do circuito.',
+        'a falta de aterramento na ligação.',
       ],
       type: 'MCQs',
-      correctAnswers: ['Superaquecimento alto, cabos frouxos, falta de gás e tensão.'],
+      correctAnswers: ['a tensão do circuito era superior à tensão da lâmpada.'],
       score: 1,
     },
     {
       // 6°
-      question: 'Quais verificações são corretas em um split de 9.000BTUS?',
+      question: `
+      Em um circuito onde estava previsto o uso de condutores de 2,5 mm2 foi utilizado condutor de 6 mm2.
+      A consequência será:`,
+      questionb: '',
       choices: [
-        'Pressão, Tensão, Correia, Amperagem e Temperatura.',
-        'Temperatura, Tensão, Pressão e Amperagem.',
-        'Pressao, Temperatura, Filtro e Correia.',
-        'Filtro, Grade, Tensão, Polia e Correia.',
-        'Polia, Correia, Filtro e Pressão.',
+        'maior consumo de energia.',
+        'maior queda de tensão.',
+        'um custo maior da instalação.',
+        'super aquecimento do condutor.',
       ],
       type: 'MCQs',
-      correctAnswers: ['Temperatura, Tensão, Pressão e Amperagem.'],
+      correctAnswers: ['um custo maior da instalação.'],
       score: 1,
     },
     {
       // 7°
-      question: 'Procedimentos corretos em preventiva de quadro elétrico?',
+      question: 'O diagrama elétrico usado para execução de instalações elétricas, que tem o objetivo de mostrar o percurso dos condutores elétricos, é o diagrama:',
+      questionb: '',
       choices: [
-        'Reaperto de parafusos, rnedicão de pressão, Limpeza e medição de tensão.',
-        'Limpeza, medição de amperagem, lavar e reaperto de parafusos.',
-        'Lavar, secar, rnedicão de tensão e amperagens.',
-        'Limpar, reaperto de parafusos, verificar tensão e amperagem.',
-        'Verificar tensão e amperagem, lavar e reapertar parafusos.',
+        'funcional.',
+        'unifilar.',
+        'multifilar.',
+        'de distribuição.',        
       ],
       type: 'MCQs',
-      correctAnswers: ['Limpar, reaperto de parafusos, verificar tensão e amperagem.'],
+      correctAnswers: ['unifilar.'],
       score: 1,
     },
     {
       // 8°
-      question: 'Quais procedimentos corretos para troca de um compressor queimado?',
+      question: 'Duas lâmpadas, uma de 60 W e outra de 100 W são ligadas em paralelo em uma rede elétrica de 127 V. Os valores de tensão elétrica nas lâmpadas serão na sequência:',
+      questionb: '',
       choices: [
-        'Vácuo, Limpeza do sistema, pressurização e funcionamento do compressor.',
-        'Funcionamento do compressor, Limpeza do compressor e vácuo.',
-        'Troca do filtro, Pressurização do sistema, vácuo e funcionamento do compressor.',
-        'Limpeza do sistema, troca do filtro, pressurização e vácuo.',
-        'Pressurização, Vácuo, Limpeza do sistema e troca do filtro.',
+        '55 V e 55 V.',
+        '60 V e 127 V.',
+        '127 V e 60 V.',
+        '127 V e 127 V.',        
       ],
       type: 'MCQs',
-      correctAnswers: ['Limpeza do sistema, troca do filtro, pressurização e vácuo.'],
+      correctAnswers: ['127 V e 127 V.'],
       score: 1,
     },
     {
       // 9°
-      question:
-        'Quais os motivos para um sistema de refrigeração desarmar por alta pressão ?',
+      question: 'Os dispositivos elétricos mostrados nas figuras, na sequência apresentada, são:',
+      questionb: '',
+      image: questionIX,
       choices: [
-        'Falta de gás, Falta de agua, compressor com defeito e ventilador parado.',
-        'Excesso de gás, correia do evaporador partida, falta de gás e gelo no compressor.',
-        'Falta de gás, falta de agua, condensador sujo, compressor desligado.',
-        'Condensador sujo, falta de agua, excesso de gás e ventilador parado no condensador.',
-        'Válvula aberta, excesso de gás, óleo sujo, falta de gás e condensador sujo.',
+        'contator, relé sobrecarga e fusível.',
+        'contator, relé sobrecarga e disjuntor.',
+        'Relé sobrecarga, fusível e contator.',
+        'Relé sobrecarga, disjuntor e fusível.',
+      ],
+      type: 'MCQs',
+      correctAnswers: ['contator, relé sobrecarga e fusível.'],
+      score: 1,
+    },
+    {
+      // 10°
+      question:
+        'As grandezas elétricas da chave seletora de um multímetro, mostradas nas sequências das figuras, são:',
+        questionb: '',
+        image: questionX,
+        choices: [
+        'tensão alternada, resistência e corrente alternada.',
+        'corrente contínua, tensão contínua e resistência.',
+        'tensão contínua, resistência e corrente contínua.',
+        'resistência, corrente contínua e tensão alternada',
       ],
       type: 'MCQs',
       correctAnswers: [
-        'Condensador sujo, falta de agua, excesso de gás e ventilador parado no condensador.',
+        'tensão contínua, resistência e corrente contínua.',
       ],
       score: 1,
     },
     {
-      // 10
-      question: 'Selecione a opção que corresponda a coluna A:',
-      code: `COLUNA A                                       COLUNA B\n 
-(1) Passagem do vapor para liquido            ( ) Linha de sucção\n                                                             
-(2) interliga evaporador e compressor         ( ) Linha de liquido\n
-(3) Eleva pressão do refrigerante             ( ) Linha de descarga\n
-(4) Ocorre a evaporação do refrigerante       ( ) Condensador\n
-(5) Interliga condensador e evaporador        ( ) Evaporador\n
-(6) Interliga compressor e condensador        ( ) Válvula de Expansão\n
-(7) Controla fluxo do refrigerante para       ( ) Compressor
-    o evaporador\n`,
-      choices: [
-        '2 - 5 - 7 - 1 - 3 - 6 - 4',
-        '2 - 5 - 6 - 1 - 4 - 7 - 3',
-        '5 - 2 - 1 - 7 - 3 - 4 - 6',
-        '2 - 5 - 1 - 6 - 4 - 7 - 3',
-        '3 - 5 - 1 - 6 - 7 - 4 - 2',
+      // 11°
+      question: `
+      No esquema de ligação abaixo identifique a ligação de um (01) circuito paralelo que utiliza 2 interruptores e uma LÂMPADA. 
+      Assinale a alternativa Verdadeira:`,
+      questionb: '',  
+      image: questionXI,
+        choices: [
+          'Esquema 01.',
+          'Esquema 02.',
+          'Esquema 03.',
+          'Todos as alternativas.',
       ],
       type: 'MCQs',
-      correctAnswers: ['2 - 5 - 6 - 1 - 4 - 7 - 3'],
+      correctAnswers: [
+        'Esquema 02.',
+      ],
+      score: 1,
+    },
+    {
+      // 12°
+      question:
+        'A figura abaixo representa o esquema elétrico de qual ligação para partida de um motor?',
+        questionb: '',
+        image: questionXII,
+        choices: [
+          'Partida com rampa de suavização.',
+          'Partida com reversão.',
+          'Partida Estrela-Triângulo.',
+          'Partida com chave compensadora.',
+      ],
+      type: 'MCQs',
+      correctAnswers: [
+        'Partida com reversão.',
+      ],
+      score: 1,
+    },
+    {
+      // 13°
+      question:
+        'Na partida de motores elétricos, a corrente pode atingir valores elevados, o que pode causar queda de tensão na rede. Esse efeito não é desejado, portanto, uma das técnicas para reduzir a corrente de partida de motores é a utilização de:',
+        questionb: '',
+        choices: [
+          'Transformador defasador.',
+          'Banco de capacitores.',
+          'Partida Estrela-Triângulo.',
+          'Limitador de sobre-excitação elétrica.',
+        ],        
+      type: 'MCQs',
+      correctAnswers: [
+        'Partida Estrela-Triângulo.',
+      ],
+      score: 1,
+    },
+    {
+      // 14°
+      question:
+        'No esquema de comando seguinte, o relé térmico de terminais 95 e 96 desligam o motor por meio da dilatação de suas lâminas bimetálicas, em situações como sobrecorrente gerada por travamento do rotor. A afirmação condiz com a imagem abaixo?',
+        questionb: '',
+        image: questionXIV,
+        choices: [
+          'Errado.',
+          'Certo.',
+        ],      
+      type: 'boolean',
+      correctAnswers: ['Certo.'],
+      score: 1,
+    },
+    {
+      // 15°
+      question:
+        'O diagrama representado é configurado para acionamento e proteção de um motor trifásico. Marque a alternativa correta:',
+        questionb: '',
+        image: questionXV,
+        choices: [
+          'o acionamento é uma chave estrela/triângulo e os contatores K1, K2 e K3 permanecem fechados após a partida.',
+          'inicialmente a partida ocorre na conexão estrela e os contatores K1 e K2 são fechados, em seguida K2 é aberto e K3 é fechado para a conexão triângulo.',
+          'o comando é um acionamento de motor, com reversão de rotação.',
+          'inicialmente a partida ocorre na conexão estrela e os contatores K3 e K2 são fechados, em seguida K2 é aberto e K1 é fechado para a conexão triângulo.',          
+      ],
+      type: 'MCQs',
+      correctAnswers: [
+        'inicialmente a partida ocorre na conexão estrela e os contatores K1 e K2 são fechados, em seguida K2 é aberto e K3 é fechado para a conexão triângulo.',
+      ],
+      score: 1,
+    },
+    {
+      // 16°
+      question:
+        'A utilização de soft starters gera a redução da corrente de partida com mínimo prejuízo no torque.',
+        questionb: '',
+        choices: [
+          'Errado.',
+          'Certo.',
+        ],      
+      type: 'boolean',
+      correctAnswers: ['Certo.'],
+      score: 1,
+    },
+    {
+      // 17°
+      question:
+        'Na figura a seguir, o motor está ligado em delta no esquema I, e em estrela no esquema II.',
+        questionb: '',
+        image: questionXVII,
+        choices: [
+          'Errado.',
+          'Certo.',
+        ],      
+      type: 'boolean',
+      correctAnswers: ['Errado.'],
       score: 1,
     },
   ],

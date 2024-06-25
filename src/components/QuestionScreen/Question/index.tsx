@@ -35,6 +35,7 @@ interface QuestionTypes {
   question: string
   code?: string
   image?: string
+  questionb: string
   type: string
   choices: string[]
   selectedAnswer: string[]
@@ -45,6 +46,7 @@ const Question: FC<QuestionTypes> = ({
   question,
   code,
   image,
+  questionb,
   type,
   choices,
   selectedAnswer,
@@ -57,6 +59,7 @@ const Question: FC<QuestionTypes> = ({
       {code && <CodeSnippet code={code} language="javascript" />}
       {/* if question contains an image */}
       {image && <QuizImage image={image} />}
+      <QuestionStyle>{questionb}</QuestionStyle>
       <AnswersContainer>
         {choices.map((choice, index) => (
           <Answer
