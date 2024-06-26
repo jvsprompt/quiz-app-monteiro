@@ -22,12 +22,12 @@ const QuizContainer = styled.div<{ selectedAnswer: boolean }>`
   width: 900px;
   min-height: 500px;
   background: ${({ theme }) => theme.colors.cardBackground};
-  border-radius: 4px;
+  border-radius: 14px;
   padding: 30px 60px 80px 60px;
   margin-bottom: 70px;
   position: relative;
   @media ${device.md} {
-    width: 100%;
+    width: 120%;
     padding: 15px 15px 80px 15px;
   }
   button {
@@ -43,7 +43,7 @@ const QuizContainer = styled.div<{ selectedAnswer: boolean }>`
 `
 
 const LogoContainer = styled.div`
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px;
   @media ${device.md} {
     margin-top: 10px;

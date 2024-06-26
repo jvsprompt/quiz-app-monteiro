@@ -54,7 +54,7 @@ export const themes: Record<string, Theme> = {
       themeColor: '#3166CA',
       themeGradient: 'linear-gradient(90deg, #162857 0%, #162857 100%)',
       background: 'linear-gradient(90deg, #162857 0%, #162857 100%)',
-      cardBackground: '#070D1D',
+      cardBackground: '#181818',
       selectTopicBg: '#21191C',
       appLogo: '#FFFFFF',
       buttonText: '#FFFFFF',

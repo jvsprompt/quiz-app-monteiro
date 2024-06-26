@@ -8,6 +8,8 @@ import QuizProvider from './context/QuizContext'
 import { GlobalStyles } from './styles/Global'
 import { themes } from './styles/Theme'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   const [currentTheme, setCurrentTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme')

@@ -1,0 +1,23 @@
+commit 178f1f64ae947516b24a0d376c95998865d0af53
+Author: Jean Vincent <jeanvincentvicente@gmail.com>
+Date:   Tue Jun 25 09:58:05 2024 -0300
+
+    adicionado fav icon monteiro
+
+commit af5cfc9ea01077a5f63282cdc19603a9f82c3f6e
+Author: Jean Vincent <jeanvincentvicente@gmail.com>
+Date:   Tue Jun 25 09:39:31 2024 -0300
+
+    Alterado o nome da pergunta da oitava questao, adicionado perquestionb, para perguntas depois das imagens, alterado o nome de Teste para Prova
+
+commit bf8c16fc198f8fdab1c9d2991a6c9609dbdf248d
+Author: Jean Vincent <jeanvincentvicente@gmail.com>
+Date:   Fri Jun 21 16:01:55 2024 -0300
+
+    Criado refrigeracao.ts e eletrica.ts, ajustado tambem aglumas perguntas da eletrica e refrigeracao
+
+commit 8f083d812be4cab1f4e22faa21323063c0402e5a
+Author: Jean Vincent <jeanvincentvicente@gmail.com>
+Date:   Fri Jun 21 13:51:17 2024 -0300
+
+    Initial Commit
