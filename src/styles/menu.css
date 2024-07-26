@@ -25,13 +25,13 @@ h3,
 h4,
 h5,
 p {
-  /* text-align: center; */
+  /*text-align: center; /* Descomentei para centralizar os textos */
 }
 
 /* Links globais */
 a {
-  text-decoration: none;
-  color: white;
+  /*text-decoration: none;/*
+  /*color: white;*/
 }
 
 /* Corpo da página */
@@ -47,11 +47,12 @@ body {
   text-align: center;
   max-width: 1000px;
   margin: auto;
+  padding: 0 2rem; /* Adicionei padding para responsividade */
 }
 
 /* Cabeçalho */
 header {
-  padding: 4rem 0 9rem 0;
+  padding: 4rem 0 3rem 0; /* Ajuste no padding inferior */
 }
 
 .heading {
@@ -81,16 +82,15 @@ header {
 /* Artigo: Cartões */
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 3rem;
-  column-gap: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste para responsividade */
+  gap: 4rem; /* Reduzi o gap para melhor layout em telas menores */
 }
 
 .card {
   width: 100%;
   position: relative;
   justify-self: center;
-  max-width: 413px;
+  max-width: 380px;
   max-height: 480px;
   background-color: var(--color-ui-card-background);
   border-radius: 20px;
@@ -104,13 +104,13 @@ header {
 }
 
 .card .ui-details {
-  padding: 1rem 0 2rem 0;
+  padding: 1rem;
   color: white;
 }
 
 .ui-details h4 {
   margin-bottom: 0.2rem;
-  font-size: 2.0rem;
+  font-size: 1.5rem; /* Ajuste no tamanho da fonte */
 }
 
 .ui-details p {
@@ -120,7 +120,7 @@ header {
 /* Botões */
 .btn {
   color: white;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem; /* Ajuste no padding */
   border-radius: 20px;
 }
 
@@ -140,34 +140,35 @@ header {
 
 /* Rodapé */
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  margin-top: 12rem;
+  padding: 2rem 0;
+  /* background-color: var(--color-ui-card-background); */
+  margin-top: 3rem; /* Reduzi a margem superior */
 }
 
 footer p {
   font-weight: 300;
+  margin: 1rem 0; /* Ajuste nas margens */
 }
 
 footer .github-logo {
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .github-logo img {
-  width: 200px;
+  width: 150px; /* Reduzi o tamanho da imagem */
 }
-
 /* Media Queries */
 @media (max-width: 1090px) {
   .container {
-    padding: 0 3rem;
+    padding: 0 1.5rem; /* Ajuste no padding */
     max-width: 100%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -180,6 +181,13 @@ footer .github-logo {
 @media (max-width: 410px) {
   .container {
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 100%;
+    margin-top: 1rem; /* Reduzi a margem superior */
   }
 }
 

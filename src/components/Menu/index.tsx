@@ -13,7 +13,15 @@ const Menu: React.FC = () => {
           <h1 className="heading">
             Selecione <span></span>uma Prova
           </h1>
-          <p className="sub-heading">Grupo Monteiro</p>
+          {/* <p className="sub-heading">Grupo Monteiro</p> */}
+        </div>
+        <div className="container">
+          <p></p>
+          <div className="github-logo">
+            <a href="">
+              <img src={logo} alt="Github Logo" />
+            </a>
+          </div>
         </div>
       </header>
       <article className="content">
@@ -42,7 +50,7 @@ const Menu: React.FC = () => {
           </div>
         </div>
       </article>
-      <footer>
+      {/* <footer>
         <div className="container">
           <p></p>
           <div className="github-logo">
@@ -51,7 +59,7 @@ const Menu: React.FC = () => {
             </a>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 };

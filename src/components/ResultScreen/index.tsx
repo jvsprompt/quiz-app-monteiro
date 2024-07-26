@@ -1,4 +1,4 @@
-import { FC, useState, useRef } from 'react'
+import { FC, useState, useRef, useEffect } from 'react'
 import styled, { css } from 'styled-components'
 
 import html2canvas from 'html2canvas'
@@ -171,6 +171,14 @@ const ResultScreen: FC = () => {
     })
   }
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.location.href = 'http://10.1.1.111:3002/'
+    }, 60000) // 60000 ms = 1 minuto
+
+    return () => clearTimeout(timer) // Limpa o timeout se o componente for desmontado
+  }, [])
+
   return (
     <ModalContainer>
       <ModalContent>
@@ -192,3 +200,4 @@ const ResultScreen: FC = () => {
 }
 
 export default ResultScreen
+
